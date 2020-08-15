@@ -41,11 +41,6 @@ function promptUser() {
 			message: 'Please enter the TEST INSTRUCTIONS:',
 		},
 		{
-			type: 'input',
-			name: 'test',
-			message: 'Please enter the TEST INSTRUCTIONS:',
-		},
-		{
 			type: 'checkbox',
 			name: 'license',
 			message:
@@ -79,11 +74,13 @@ function promptUser() {
 }
 
 function generateReadMe(answers) {
+	console.log(answers.license);
 	return `
 # Title
 ${answers.title}
 
 # Description
+${answers.description}
 
 # Table of contents
 
@@ -98,16 +95,23 @@ ${answers.title}
 - [Questions](#questions)
 
 # Installation
+${answers.installation}
 
 # Usage
+${answers.usage}
 
 # License
 
 # Contributing
+${answers.contributing}
 
 # Tests
+${answers.test}
 
 # Questions
+Should you have any further questions, please feel free to reach me from the following channel:
+/n GitHub: [${answers.github}](https://github.com/${answers.github})
+/n Email: ${answers.email}
 
 `;
 }
