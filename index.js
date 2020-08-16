@@ -56,9 +56,11 @@ function promptUser() {
 			type: 'input',
 			name: 'email',
 			message: 'Please enter the yor EMAIL for your contact:',
+			// the default show the placeholder for the user easier reference
 			default: function () {
 				return 'foo@example.com';
 			},
+			// the validator is applied to avoid the user enter a wrong email format
 			validate: function (value) {
 				var pass = value.match(
 					/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/i
@@ -130,7 +132,6 @@ Email: ${answers.email}
 }
 
 async function init() {
-	console.log('hi');
 	try {
 		const answers = await promptUser();
 
