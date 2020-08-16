@@ -136,9 +136,9 @@ async function init() {
 
 		const readMe = generateReadMe(answers);
 
-		await writeFileAsync('READMEtest.md', readMe);
+		await writeFileAsync('README.md', readMe);
 
-		console.log('Successfully wrote to READMEtest.md');
+		console.log('Successfully wrote to README.md');
 	} catch (err) {
 		console.log(err);
 	}
