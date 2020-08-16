@@ -1,9 +1,9 @@
 
 # Title
-asasas
+3434343
 
 # Description
-asrerere
+232323232
 
 # Table of contents
 
@@ -18,22 +18,22 @@ asrerere
 - [Questions](#questions)
 
 # Installation
-dvffsrfqas
+2323232323
 
 # Usage
-fhfgfgasd
+4545454545
 
 # License
-[![License: Creative Commons Licenses](https://img.shields.io/badge/License-Creative Commons Licenses-brightgreen.svg)](https://opensource.org/licenses/Creative Commons Licenses)
+![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg) ![License: Creative Commons Licenses](https://img.shields.io/badge/License-CreativeCommonsLicenses-brightgreen.svg)
 
 # Contributing
-tyrrwdfdv
+4565656565
 
 # Tests
-assasqw
+565656565
 
 # Questions
-Should you have any further questions, please feel free to reach me from the following channel:
-GitHub: [rickyfuk](https://github.com/rickyfuk)
+Should you have any further questions, please feel free to reach me from the following channel:  
+GitHub: [rickyfuk](https://github.com/rickyfuk)  
 Email: rickyfukfuk@gmail.com
 
