@@ -75,6 +75,16 @@ function promptUser() {
 
 function generateReadMe(answers) {
 	console.log(answers.license);
+	const licenseBadges = [];
+	answers.license.forEach((license) =>
+		licenseBadges.push(
+			`[![License: ${license}](https://img.shields.io/badge/License-${license}-brightgreen.svg)](https://opensource.org/licenses/${license})`
+		)
+	);
+	console.log(licenseBadges);
+	for (let licenseBadge of licenseBadges) {
+		licenseResult = `${licenseBadge}`;
+	}
 	return `
 # Title
 ${answers.title}
@@ -101,6 +111,7 @@ ${answers.installation}
 ${answers.usage}
 
 # License
+${licenseResult}
 
 # Contributing
 ${answers.contributing}
@@ -110,8 +121,8 @@ ${answers.test}
 
 # Questions
 Should you have any further questions, please feel free to reach me from the following channel:
-/n GitHub: [${answers.github}](https://github.com/${answers.github})
-/n Email: ${answers.email}
+GitHub: [${answers.github}](https://github.com/${answers.github})
+Email: ${answers.email}
 
 `;
 }
