@@ -23,7 +23,7 @@ Make a Hello World Application
 enter "npm i"
 
 <video width="320" height="240" controls>
-    <source src="sample.mp4" type="video/mp4" />
+    <source src="sample.mp4" type="video/mp4">
 </video>
 
 # Usage
